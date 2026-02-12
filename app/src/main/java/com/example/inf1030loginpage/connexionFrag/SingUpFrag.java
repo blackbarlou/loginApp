@@ -1,4 +1,4 @@
-package com.example.inf1030loginpage.frag;
+package com.example.inf1030loginpage.connexionFrag;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.inf1030loginpage.R;
 
-public class SignIn extends Fragment {
+public class SingUpFrag extends Fragment {
 
-    public SignIn (){
+    public SingUpFrag(){
 
     }
     public View onCreateView (LayoutInflater inflater,

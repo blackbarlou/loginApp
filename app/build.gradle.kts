@@ -2,7 +2,10 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
-android {
+    android {
+        buildFeatures {
+            dataBinding = true
+        }
     namespace = "com.example.inf1030loginpage"
     compileSdk = 35
 

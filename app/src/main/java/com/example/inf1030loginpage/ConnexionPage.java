@@ -1,19 +1,14 @@
 package com.example.inf1030loginpage;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.inf1030loginpage.frag.LogIn;
-import com.example.inf1030loginpage.frag.Reset;
-import com.example.inf1030loginpage.frag.SignIn;
+import com.example.inf1030loginpage.connexionFrag.SingInFrag;
+import com.example.inf1030loginpage.connexionFrag.ResetPasswordFrag;
+import com.example.inf1030loginpage.connexionFrag.SingUpFrag;
 
 public class ConnexionPage extends AppCompatActivity {
 
@@ -23,7 +18,7 @@ public class ConnexionPage extends AppCompatActivity {
 
         //pour afficher par defaut le fragment de connexion dans le conteneur
         if ( savedInstanceState == null ){
-            switchFragment(new LogIn());
+            switchFragment(new SingInFrag());
         }
 
         //  Ici tu dis à l'activité : "utilise ce fichier XML comme écran"
@@ -37,17 +32,17 @@ public class ConnexionPage extends AppCompatActivity {
 
         // Quand on clique sur "reset", on change le fragment affiché
         reset.setOnClickListener(v -> {
-            switchFragment(new Reset());
+            switchFragment(new ResetPasswordFrag());
         });
 
         //  Quand on clique sur "connexion", on affiche le fragment LogIn
         connexion.setOnClickListener( v -> {
-            switchFragment( new LogIn());
+            switchFragment( new SingInFrag());
         } );
 
         //  Quand on clique sur "signIn", on affiche le fragment SignIn
         signIn.setOnClickListener( v -> {
-            switchFragment( new SignIn());
+            switchFragment( new SingUpFrag());
         } );
 
     }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".frag.LogIn">
+    tools:context=".connexionFrag.SingInFrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
